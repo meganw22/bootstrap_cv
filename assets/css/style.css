@@ -31,6 +31,10 @@
     background-color: #f4f4f4;
 }
 
+.bg-color-work-history {
+    background-color: #9b59b6;
+}
+
 /* ---------Special styles------------*/
 
 h1,
@@ -66,12 +70,15 @@ h4 {
 
 }
 
-.section-heading {
+.section-heading,
+.history-heading {
     font-family: "Exo", sans-serif;
     font-family: 300;
     margin-top: 25px;
     margin-bottom: 40px;
 }
+
+
 
 /* ---------Heading------------*/
 
@@ -289,4 +296,52 @@ footer {
 
 .progress-section {
     margin: 40px 20px;
+}
+
+/* ---------Work history------------*/
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 2em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: abolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background-color: #fafafa;
+}
+
+.history-item {
+    margin-bottom: 30px;
 }
